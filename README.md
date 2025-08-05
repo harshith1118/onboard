@@ -21,11 +21,13 @@ This project provides an interactive dashboard for analyzing employee onboarding
 ## Setup
 
 1. **Install dependencies:**
+
    ```powershell
    pip install streamlit plotly pandas
    ```
 
 2. **Run the dashboard:**
+
    ```powershell
    streamlit run dashboard.py
    ```
