@@ -45,7 +45,6 @@ This project provides an interactive dashboard for analyzing employee onboarding
    streamlit run dashboard.py
    ```
 
-<<<<<<< HEAD
 3. **View in browser:**
 
 [Launch Onboarding Dashboard](https://harshith1118-onboard-dashboard-gzhq7b.streamlit.app/)
@@ -54,7 +53,7 @@ This project provides an interactive dashboard for analyzing employee onboarding
 
 ![Average_Final_Assement_Score](./screenshots/avgfinal.png)
 
-![Onboarding_status](./screenshots/Salespipeline_punels.png)
+![Onboarding_status](./screenshots/onboarding.png)
 
 ![Module_progrees](./screenshots/ModuelProgress.png)
 
@@ -63,11 +62,7 @@ This project provides an interactive dashboard for analyzing employee onboarding
 ![Module_Compleation_Analysis](./screenshots/moduelcomp.png)
 
 ![Detailed_Employee_Data](./screenshots/Detailed.png)
-=======
-3. **View in browser:**  
-    [Live Onboarding Dashboard](https://harshith1118-onboard-dashboard-gzhq7b.streamlit.app/)
 
->>>>>>> 3b92e45f900f3a309020620581cd964698b7a2c7
 
 ## Usage
 
