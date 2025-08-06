@@ -1,14 +1,24 @@
-# Onboarding Dashboard
+# Onboarding Dashboard 📊
 
 This project provides an interactive dashboard for analyzing employee onboarding data using Streamlit and Plotly.
 
 ## Features
 
-- **Data Cleaning:** Cleans and preprocesses onboarding data.
-- **Status Calculation:** Identifies employees as "On Track" or "Delayed" based on module completion and start date.
-- **Analysis:** Calculates average assessment scores by role.
-- **Visualizations:** Interactive bar charts, pie charts, and heatmaps.
-- **Modular Code:** Logic is split into separate files for maintainability.
+### Key Metrics and Insights 📈
+- **Overview Statistics:** Total employees, completion rates, and average assessment scores
+- **Status Tracking:** Real-time monitoring of "On Track" vs "Delayed" employees
+- **Performance Analytics:** Detailed assessment score analysis by role
+
+### Interactive Visualizations 📊
+- **Role Performance:** Dynamic bar charts showing assessment scores by role
+- **Status Distribution:** Interactive pie charts for onboarding status
+- **Module Progress:** Heat maps showing completion rates across roles
+- **Filtered Views:** Custom filters for role, status, and score ranges
+
+### Data Management 🔍
+- **Data Cleaning:** Automated preprocessing of onboarding data
+- **Status Calculation:** Smart tracking based on module completion and start date
+- **Modular Design:** Separated logic for better maintenance and scalability
 
 ## File Structure
 
