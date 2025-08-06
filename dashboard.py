@@ -61,9 +61,9 @@ with col1:
 
 with col2:
     st.subheader("Onboarding Status Distribution")
-    status_counts = filtered_df['Status'].value_counts()
-    fig_pie = px.pie(values=status_counts.values, 
-                     names=status_counts.index,
+    status_dist = filtered_df['Status'].value_counts()
+    fig_pie = px.pie(values=status_dist.values, 
+                     names=status_dist.index,
                      title="Status Distribution",
                      hole=0.4)
     st.plotly_chart(fig_pie, use_container_width=True)
