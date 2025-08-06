@@ -5,17 +5,20 @@ This project provides an interactive dashboard for analyzing employee onboarding
 ## Features
 
 ### Key Metrics and Insights 📈
+
 - **Overview Statistics:** Total employees, completion rates, and average assessment scores
 - **Status Tracking:** Real-time monitoring of "On Track" vs "Delayed" employees
 - **Performance Analytics:** Detailed assessment score analysis by role
 
 ### Interactive Visualizations 📊
+
 - **Role Performance:** Dynamic bar charts showing assessment scores by role
 - **Status Distribution:** Interactive pie charts for onboarding status
 - **Module Progress:** Heat maps showing completion rates across roles
 - **Filtered Views:** Custom filters for role, status, and score ranges
 
 ### Data Management 🔍
+
 - **Data Cleaning:** Automated preprocessing of onboarding data
 - **Status Calculation:** Smart tracking based on module completion and start date
 - **Modular Design:** Separated logic for better maintenance and scalability
