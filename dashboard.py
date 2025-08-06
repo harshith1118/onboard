@@ -10,11 +10,11 @@ import pandas as pd
 
 st.set_page_config(page_title="Onboarding Analytics", page_icon="📊", layout="wide")
 
-st.title("Onboarding Dashboard 📊")
+st.title("Onboarding Dashboard ")
 st.markdown("### Key Insights and Analytics")
 
 # Sidebar filters
-st.sidebar.header("Filters 🔍")
+st.sidebar.header("Filters")
 
 # Load and process data
 df = load_and_clean_data('onboarding_dataset.csv')
@@ -90,7 +90,7 @@ with col3:
     st.metric("Avg Assessment Score", f"{avg_score:.1f}%")
 
 # Role Performance Analysis
-st.header("📈 Role Performance Analysis")
+st.header("Role Performance Analysis")
 col1, col2 = st.columns(2)
 
 with col1:
@@ -111,7 +111,7 @@ with col2:
     st.plotly_chart(fig_pie, use_container_width=True)
 
 # Module Progress Analysis
-st.header("📊 Module Completion Analysis")
+st.header("Module Completion Analysis")
 st.subheader("Module Completion Rate by Role")
 heatmap_data = module_completion_heatmap(df)
 fig_heat = px.imshow(heatmap_data, 
@@ -122,7 +122,7 @@ fig_heat = px.imshow(heatmap_data,
 st.plotly_chart(fig_heat, use_container_width=True)
 
 # Detailed Data View
-st.header("🔍 Detailed Employee Data")
+st.header("Detailed Employee Data")
 st.markdown("Filter and explore individual employee progress")
 
 # Add filters
