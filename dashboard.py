@@ -8,6 +8,13 @@ from status_logic import calculate_status
 from analysis import average_scores_by_role, module_completion_heatmap, status_counts
 import pandas as pd
 
+# Cache data loading and processing
+@st.cache_data
+def load_and_process_data():
+    df = load_and_clean_data('onboarding_dataset.csv')
+    df = calculate_status(df)
+    return df
+
 st.set_page_config(page_title="Onboarding Analytics", page_icon="📊", layout="wide")
 
 st.title("Onboarding Dashboard ")
@@ -16,9 +23,8 @@ st.markdown("### Key Insights and Analytics")
 # Sidebar filters
 st.sidebar.header("Filters")
 
-# Load and process data
-df = load_and_clean_data('onboarding_dataset.csv')
-df = calculate_status(df)
+# Load and process data (cached)
+df = load_and_process_data()
 
 # Add filters
 roles = ['All'] + list(df['Role'].unique())
