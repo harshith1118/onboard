@@ -86,14 +86,6 @@ st.plotly_chart(fig_heat, use_container_width=True)
 # Detailed Data View
 st.subheader("Detailed Employee Data")
 st.dataframe(filtered_df.style.highlight_max(axis=0, subset=['Final_Assessment_Score']))
-with col1:
-    st.metric("Total Employees", len(df))
-with col2:
-    on_track = len(df[df['Status'] == 'On Track'])
-    st.metric("On Track", f"{on_track} ({on_track/len(df)*100:.1f}%)")
-with col3:
-    avg_score = df['Final_Assessment_Score'].mean()
-    st.metric("Avg Assessment Score", f"{avg_score:.1f}%")
 
 # Role Performance Analysis
 st.header("Role Performance Analysis")
